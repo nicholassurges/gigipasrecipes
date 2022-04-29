@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+</head>
+    <body>
+    <!-----------------------------------Nav Bar------------------------------>    
+    <nav class="navbar">
+    <div class="nav-center">
+        <!-----------------------------------Header----------------------------->
+        <div class="nav-header">
+            <a href="index.html" class="nav-logo">
+                <img src="./assets/images/logo.png" alt="tasties food truck">
+            </a>
+            <button type="button" class="btn nav-btn">
+                <i class="fas fa-align-justify"></i>
+            </button>
+        </div>
+        <!-------------------------------------Links--------------------------->
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="recipes.html" class="nav-link">Recipes</a>
+            <a href="featuredrecipe.html" class="nav-link">Favorite Recipe</a>
+            <div class="nav-link contact-link">
+                <a href="contact.html" class="btn">Contact</a>
+            </div>
+        </div>
+    </div>
+</nav>
+    <!-------------------------------End Of Nav----------------------->
+    <!----------------------------------Main----------------------------->
+    <main class="page">
+        <section class="contact-container">
+            <article class="contact-info">
+                <h3>Want To Get In Touch!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur obcaecati maiores impedit velit delectus debitis 
+                    perferendis voluptas. Qui doloremque, natus sit minima saepe ut, rerum placeat et beatae temporibus voluptates. Ducimus 
+                    at beatae vero aperiam asperiores quidem? Quam pariatur dolore illo consectetur doloremque enim? Nihil 
+                    accusamus veritatis ipsa vitae cum. 
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci culpa deleniti iste voluptate quisquam temporibus, 
+                    soluta dolorem tenetur a quae sed nisi harum cum expedita dicta nesciunt animi eveniet? Quasi?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus iusto dignissimos magni. Quasi quidem architecto 
+                    labore doloribus et aliquam eveniet!</p>
+            </article>
+            <article >
+                <form class="form contact-form">
+                    <div class="form-row">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" placeholder="Your Name" id="name" name="name" class="form-input">
+                    </div>
+                    <div class="form-row">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" placeholder="Email Address" id="email" name="email" class="form-input">
+                    </div>
+                    <div class="form-row">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input">
+                    </div>
+                    <div class="form-row">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea name="message" id="message" class="form-textarea" rows="1"></textarea>
+                    </div>
+                    <p class="form-label">
+                        Have you ever visited our site before?
+                    <span class="radio-wrapper">
+                        <input type="radio" name="radio-confirm" id="radio-button-yes" />
+                        <label for="radio-yes">Yes</label>
+                    </span>
+                    <span class="radio-wrapper">
+                        <input type="radio" name="radio-confirm" id="radio-button-no" />
+                        <label for="radio-no">No</label>
+                    </span>
+                    </p>
+                    <p class="form-label">
+                    <span class="checkbox-wrapper">
+                        <input type="checkbox" name="checkpoint1" id="checkbox" />
+                        <label for="checkbox">Check the box to be added to our mailing list.</label>
+                    </span>
+                    </p>
+                    <button type="submit" class="btn btn-block">Submit</button>
+                    <button type="reset" class="btn btn-block">Reset</button>
+                </form>
+            </article>
+        </section>
+        <section class="featured-recipes">
+            <h5 class="featured-title">Look At these Featured Recipes</h5>
+            <!------------------------Recipe List Container--------------------------------->
+            <div class="recipes-list">
+                <!-------------------------Single Recipe ------------------------------------>
+                <a href="https://cafedelites.com/best-fluffy-pancakes/" target="blank" class="recipe">
+                    <img src="./assets/images/breakfast.jpg" alt="food" class="img recipe-img"/>
+                    <h5>Fluffy Pancakes</h5>
+                    <p>Prep: 5 min. | Cook: 20 min.</p>
+                </a>
+
+                <a href="https://www.onceuponachef.com/recipes/steakhouse-burgers.html" target="blank" class="recipe">
+                    <img src="./assets/images/lunch.jpg" alt="food" class="img recipe-img"/>
+                    <h5>Juicy Steakhouse Burgers</h5>
+                    <p>Prep: 15 mins. | Cook: 10 mins.</p>
+                </a>
+                <!-------------------------End Single Recipe ---------------------------------->
+            <!------------------------Recipe List Container--------------------------------->
+            
+                <!-------------------------Single Recipe ------------------------------------>
+                <a href="https://www.allrecipes.com/recipe/220414/hot-tamale-pie/" target="blank" class="recipe">
+                    <img src="./assets/images/dinner.jpeg" alt="food" class="img recipe-img"/>
+                    <h5>Hot Tamale Pie</h5>
+                    <p>Prep: 20 mins. | Cook: 1 hr 10 mins.</p>
+                </a>
+        
+    </main>
+    <!-------------------------------End Of Main----------------------------->
+    <!----------------------------------Footer----------------------------->
+    <footer class="page-footer">
+        <p>&copy; <span id="date"></span>
+        <span class="footer-logo">GiGi Pa's Recipes</span>
+        Built by <a href="https://nicholassurges.github.io/">Nick Surges</a> 
+        </p>
+    </footer>
+    <script src="./js/app.js"></script>
+    </body>
+</html>
