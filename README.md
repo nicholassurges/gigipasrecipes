@@ -9,7 +9,7 @@ HTML
 CSS
 JavaScript
 Website
-https://nicholassurges.github.io/run-buddy/
+https://nicholassurges.github.io/gigipasrecipes/
 
 Contribution
 Made with a huge amount of ❤️ by Nick Surges
